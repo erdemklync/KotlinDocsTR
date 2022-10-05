@@ -1,3 +1,5 @@
+<sup>Bu belge, Kotlin'in resmî rehberindeki [Basic syntax](https://kotlinlang.org/docs/basic-syntax.html) başlıklı kısmın çevirisidir. Son güncelleme: 05.10.2022<sup>
+    
 Bu belgede temel söz dizimi öğelerinin örnekleri yer almaktadır. Her kısmın sonunda ilgili konunun detaylı açıklamalarına yönlendiren bir bağlantı bulabilirsiniz.
 
 Ayrıca, Kotlin'in tüm temel konularını JetBrains Academy üzerinden erişebileceğiniz ücretsiz [Kotlin Temelleri patikası](https://hyperskill.org/join/fromdocstoJetSalesStat?redirect=true&next=/tracks/18) ile öğrenebilirsiniz.
