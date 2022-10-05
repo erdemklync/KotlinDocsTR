@@ -28,7 +28,7 @@ fun main() {
 }
 ```
 
-`main` fonksiyonu, String argümanlar da alabilir.
+`main` fonksiyonu String argümanlar da alabilir.
 
 ```kotlin
 fun main(args: Array<String>) {
@@ -38,7 +38,7 @@ fun main(args: Array<String>) {
 
 ## Standart çıktı'ya (Standart output) yazdırma
 
-`print` fonlsiyonu aldığı argümanı standart çıktıya yazdırır.
+`print` fonksiyonu aldığı argümanı standart çıktıya yazdırır.
 
 ```kotlin
 fun main() {
@@ -62,7 +62,7 @@ fun main() {
 
 ## Fonksiyonlar
 
-İki adet `Int`parametresi alan ve `Int` değeri döndüren bir fonksiyon:
+`Int` tipinde iki parametre alan ve `Int` değeri döndüren bir fonksiyon:
 
 ```kotlin
 //örnekBaşlangıcı
