@@ -26,7 +26,7 @@ fun main() {
 }
 ```
 
-`main` fonksiyonu, diğer bir kullanımında String argümanlar alabilir.
+`main` fonksiyonu, String argümanlar da alabilir.
 
 ```kotlin
 fun main(args: Array<String>) {
