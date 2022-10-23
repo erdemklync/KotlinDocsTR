@@ -25,3 +25,39 @@ Birincil constructor herhangi bir annotation veya görünürlük düzenleyicisin
 ```kotlin
 class Person(firstName: String) { /*...*/ }
 ```
+
+Birincil constructor herhangi bir kod içeremez. Başlatma komutları `init` deyimi ile tanımlanan _başlatma bloklarının_ içine yazılabilir.
+
+Sınıftan bir örnek oluşturulurken başlatma blokları sınıfın gövdesinde yazılı olduğu sırada, property tanımlamalarıyla ayrılmış şekilde çalıştırılır.
+
+```kotlin
+//sampleStart
+class InitOrderDemo(name: String) {
+    val firstProperty = "Birinci property: $name".also(::println)
+    
+    init {
+        println("İlk bailatma bloğu çıktısı: $name")
+    }
+    
+    val secondProperty = "İkinci property: ${name.length}".also(::println)
+    
+    init {
+        println("İkinci başlatma bloğu çıktısı: ${name.length}")
+    }
+}
+//sampleEnd
+
+fun main() {
+    InitOrderDemo("hello")
+}
+```
+{kotlin-runnable="true"}
+
+Birincil constructor parametreleri başlatma blokları içinde kullnılabilir. Ayrıca, sınıfın gövdesindeki property tanımlamalarında da kullanılabilirler.
+
+```kotlin
+class Customer(name: String) {
+    val customerKey = name.uppercase()
+}
+```
+
